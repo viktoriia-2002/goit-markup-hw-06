@@ -17,18 +17,39 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  text-align: center;
 }
 
 .btn {
+  display: inline-block;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border-radius: 4px;
+
 }
 
-/* sgeijg */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* yvaga do detalii */
 .subtitle {
   font-weight: 500;
@@ -53,6 +74,7 @@ body {
 
 /* ------------HEADER--------------*/
 
+
 .header-logo,
 .footer-logo {
   font-family: "Raleway";
@@ -70,7 +92,25 @@ body {
   margin-left: -7px;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-list .item+.item {
+  margin-left: 40px;
+}
+
+
 .header-link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -87,6 +127,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
+
+.header-tel+.header-email {
+  margin-left: 40px;
+}
+
+.header-tel,
+.header-email {
+  margin-left: auto;
+}
+
 
 .header-link:hover,
 .header-link:focus {
@@ -107,7 +157,10 @@ body {
 
 /* ------------Section Solutions--------------*/
 
+
+
 .solutions-title {
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -125,11 +178,16 @@ body {
 }
 
 .solutions-btn {
+  padding: 10px 24px;
   color: #ffffff;
   background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ------------Section Solutions--------------*/
+
+
+/* ------------specifics--------------*/
 
 .specifics-text {
   font-size: 14px;
@@ -137,9 +195,13 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* ------------Section Solutions--------------*/
+.specifics-list {
+  display: flex;
+}
 
-/* ------------specifics--------------*/
+.specifics-item {
+  margin-right: 30px;
+}
 
 .specifics-subtitle {
   font-weight: 700;
@@ -164,6 +226,16 @@ body {
 
 .our-business-title {
   color: var(--primary-header-color);
+  text-align: center;
+}
+
+.our-business-list {
+  display: flex;
+}
+
+.our-business-items {
+  margin-top: 50px;
+  margin-right: 30px;
 }
 
 /* ------------Our-business--------------*/
@@ -171,6 +243,11 @@ body {
 /* ------------Our-team--------------*/
 
 .our-team-title {
+  text-align: center;
+  color: var(--primary-header-color);
+}
+
+.our-team-subtitle {
   color: var(--primary-header-color);
 }
 
@@ -181,19 +258,29 @@ body {
   color: var(--secondary-color);
 }
 
+.our-team-list {
+  display: flex;
+}
+
+.our-team-item {
+  margin-right: 30px;
+}
+
 /* ------------Our-team--------------*/
 
 footer {
   background-color: #2f303a;
 }
 
+.footer-nav {
+  margin-top: 28px;
+}
+
 .footer-logo-span {
   color: #ffffff;
 }
 
-.our-team-subtitle {
-  color: var(--primary-header-color);
-}
+
 
 .footer-link {
   font-style: normal;
@@ -233,7 +320,40 @@ footer {
 
 /* ------------Portfolio-second-page--------------*/
 
+.our-portfolio-options-list {
+  display: flex;
+  justify-content: center;
+}
+
+.our-portfolio-options-list>.item {
+  display: flex;
+  margin-right: 8px;
+}
+
+.our-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.our-portfolio-list-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.our-portfolio-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.our-portfolio-list-item:nth-child(-n +3) {
+  margin-bottom: 0;
+}
+
+
+
 .portfolio-btn {
+  padding: 6px 22px;
   color: var(--primary-header-color);
   background: #f5f4fa;
   font-weight: 500;
@@ -241,6 +361,7 @@ footer {
   line-height: 1.62;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  border: none;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -260,4 +381,3 @@ footer {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
-
