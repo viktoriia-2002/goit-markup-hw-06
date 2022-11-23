@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -44,50 +46,69 @@
         <ul class="our-portfolio-list list">
           <li class="our-portfolio-list-item">
             <img src="./img/img-portfolio-1.jpg" alt="website of Technokryak company" width="370" height="294">
-            <h3 class="our-portfolio-title portfolio-title">Технокряк</h3>
-            <p2 class="our-portfolio-text">Веб-сайт</p2>
+            <div class="our-portfolio-desq">
+              <h3 class="our-portfolio-title portfolio-title">Технокряк</h3>
+            <p class="our-portfolio-text">Веб-сайт</p>
+            </div>
           </li>
           <li class="our-portfolio-list-item">
-            <img src="./img/img-portfolio-2.jpg" alt="Постер New Orlean vs Golden Star команди" width="370" height="294">
-            <h3 class="our-portfolio-title portfolio-title">Постер New Orlean vs Golden Star</h3>
-            <p2 class="our-portfolio-text">Дизайн</p2>
+            <img src="./img/img-portfolio-2.jpg" alt="Постер New Orlean vs Golden Star команди" width="370"
+              height="294">
+              <div class="our-portfolio-desq">
+                 <h3 class="our-portfolio-title portfolio-title">Постер New Orlean vs Golden Star</h3>
+                <p2 class="our-portfolio-text">Дизайн</p2>
+              </div>
           </li>
           <li class="our-portfolio-list-item">
             <img src="./img/img-portfolio-3.jpg" alt="Логотип ресторану в видляді риби" width="370" height="294">
-            <h3 class="our-portfolio-title portfolio-title">Ресторан Seafood</h3>
+            <div class="our-portfolio-desq">
+              <h3 class="our-portfolio-title portfolio-title">Ресторан Seafood</h3>
             <p2 class="our-portfolio-text">Додаток</p2>
+            </div>
           </li>
           <li class="our-portfolio-list-item">
             <img src="./img/img-portfolio-4.jpg" alt="Фото навушників" width="370" height="294">
-            <h3 class="our-portfolio-title portfolio-title">Проєкт Prime</h3>
+            <div class="our-portfolio-desq">
+              <h3 class="our-portfolio-title portfolio-title">Проєкт Prime</h3>
             <p2 class="our-portfolio-text">Маркетинг</p2>
+            </div>
           </li>
           <li class="our-portfolio-list-item">
             <img src="./img/img-portfolio-5.jpg" alt="Фото двох коробків" width="370" height="294">
-            <h3 class="our-portfolio-title portfolio-title">Проєкт Boxes</h3>
+            <div class="our-portfolio-desq">
+              <h3 class="our-portfolio-title portfolio-title">Проєкт Boxes</h3>
             <p2 class="our-portfolio-text">Додаток</p2>
+            </div>
           </li>
           <li class="our-portfolio-list-item">
             <img src="img/img-portfolio-6.jpg" alt="Фото комп'ютера на якому зображений вебсайта" width="370"
               height="294">
-            <h3 class="our-portfolio-title">Inspiration has no Borders</h3>
+              <div class="our-portfolio-desq">
+                <h3 class="our-portfolio-title">Inspiration has no Borders</h3>
             <p2 class="our-portfolio-text">Веб-сайт</p2>
+              </div>
           </li>
           <li class="our-portfolio-list-item">
             <img src="./img/img-portfolio-7.jpg" alt="Видання журналу Limited Edition" width="370" height="294">
-            <h3 class="our-portfolio-title portfolio-title">Видання Limited Edition</h3>
-            <p2 class="our-portfolio-text">Дизайн</p2>
+            <div class="our-portfolio-desq">
+              <h3 class="our-portfolio-title portfolio-title">Видання Limited Edition</h3>
+              <p2 class="our-portfolio-text">Дизайн</p2>
+            </div>
           </li>
           <li class="our-portfolio-list-item">
             <img src="./img/img-portfolio-8.jpg" alt="Зображення тегу проєкту LAB" width="370" height="294">
-            <h3 class="our-portfolio-title portfolio-title">Проєкт LAB</h3>
+            <div class="our-portfolio-desq">
+              <h3 class="our-portfolio-title portfolio-title">Проєкт LAB</h3>
             <p2 class="our-portfolio-text">Маркетинг</p2>
+            </div>
           </li>
           <li class="our-portfolio-list-item">
             <img src="./img/img-portfolio-9.jpg"
               alt="Картинка ноутбука на якому зображий вебсайт компанії Growing Business" width="370" height="294">
-            <h3 class="our-portfolio-title portfolio-title">Growing Business</h3>
+              <div class="our-portfolio-desq">
+                <h3 class="our-portfolio-title portfolio-title">Growing Business</h3>
             <p2 class="our-portfolio-text">Додаток</p2>
+              </div>
           </li>
         </ul>
       </div>
@@ -96,19 +117,20 @@
 
   <footer>
     <div class="container">
-        <a href="" class="footer-logo link ">Web <span class="footer-logo-span">Studio</span></a>
-        <address>
-          <ul class="footer-nav list">
-            <li>
-              <a class="footer-link-address link" href="https://goo.gl/maps/dssPtxW2memMisd88">м. Київ, пр-т Лесі
-                Українки, 26</a>
-            </li>
-            <li><a class="footer-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="footer-link link" href="tel:++380961111111">+38 096 111 11 11</a></li>
-          </ul>
-        </address>
+      <a href="" class="footer-logo link ">Web <span class="footer-logo-span">Studio</span></a>
+      <address>
+        <ul class="footer-nav list">
+          <li>
+            <a class="footer-link-address link" href="https://goo.gl/maps/dssPtxW2memMisd88">м. Київ, пр-т Лесі
+              Українки, 26</a>
+          </li>
+          <li><a class="footer-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="footer-link link" href="tel:++380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </address>
     </div>
 
   </footer>
 </body>
+
 </html>
