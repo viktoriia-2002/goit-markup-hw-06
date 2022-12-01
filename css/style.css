@@ -132,6 +132,10 @@ header {
   margin-left: 93px;
 }
 
+.header-contacts-list {
+  display: flex;
+}
+
 .header-list .item + .item {
   margin-left: 40px;
 }
@@ -157,12 +161,11 @@ header {
   color: var(--secondary-color);
 }
 
-.header-tel + .header-email {
+.header-contacts-list > .item {
   margin-left: 40px;
 }
 
-.header-tel,
-.header-email {
+.header-contacts-list {
   margin-left: auto;
 }
 
@@ -181,10 +184,22 @@ header {
   color: var(--accent-color);
 }
 
-.header-tel::before {
-  content: "";
-  margin-left: 10px;
-  color: #212121;
+/* .header-email-icon:hover,
+.header-email-icon:focus {
+  color: var(--accent-color);
+}
+
+.header-phone-icon:hover,
+.header-phone-icon:focus
+ {
+  color: var(--accent-color);
+} */
+
+.header-email-icon,
+.header-phone-icon{
+  margin-right: 10px;
+  fill: currentColor;
+  display: inline-flex;
 }
 
 /* ------------HEADER--------------*/
@@ -396,25 +411,27 @@ header {
 .loyal-customers-items {
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
 }
 
 .loyal-customers-items {
-margin-right: 30px;
-align-items: center;
-    justify-content: center;
-    display: flex;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
-.loyal-customers-items:last-child{
+.loyal-customers-items:last-child {
   margin-right: 0;
 }
- 
+
 .loyal-customers-icons:hover {
-color: red;
+  fill: var(--accent-color);
 }
 
-
+.loyal-customers-icons {
+  fill: currentColor;
+}
 /* ------------Portfolio-second-page--------------*/
 
 .our-portfolio-options-list {
