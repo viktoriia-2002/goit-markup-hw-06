@@ -153,6 +153,9 @@ header {
 
 .header-tel,
 .header-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
@@ -184,23 +187,15 @@ header {
   color: var(--accent-color);
 }
 
-/* .header-email-icon:hover,
-.header-email-icon:focus {
-  color: var(--accent-color);
-}
-
-.header-phone-icon:hover,
-.header-phone-icon:focus
- {
-  color: var(--accent-color);
-} */
-
 .header-email-icon,
-.header-phone-icon{
+.header-phone-icon {
   margin-right: 10px;
   fill: currentColor;
   display: inline-flex;
 }
+
+
+
 
 /* ------------HEADER--------------*/
 
@@ -288,6 +283,17 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+}
+
+
+.specifics-icons {
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 /* ------------specifics--------------*/
@@ -380,20 +386,18 @@ header {
   align-items: center;
 }
 
-.our-team-soc-link:hover {
-  color: var(--accent-color);
+.our-team-soc-icons {
+  fill: currentColor;
 }
 
 .our-team-soc-icons:hover {
   fill: white;
 }
 
-/* .our-team-soc-link:hover .our-team-soc-icons{
-  fill: green;
-} */
-
-.our-team-soc-link:hover {
+.our-team-soc-link:hover,
+.our-team-soc-link:focus{
   background-color: var(--accent-color);
+  transition-duration: 0s;
 }
 
 /* ------------Our-team--------------*/
@@ -412,9 +416,6 @@ header {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
-}
-
-.loyal-customers-items {
   margin-right: 30px;
   align-items: center;
   justify-content: center;
@@ -430,7 +431,7 @@ header {
 }
 
 .loyal-customers-icons {
-  fill: currentColor;
+  fill: #afb1b8;
 }
 /* ------------Portfolio-second-page--------------*/
 
@@ -459,6 +460,7 @@ header {
 .our-portfolio-list-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .our-portfolio-list-item:nth-child(3n) {
@@ -488,6 +490,7 @@ header {
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--accent-color);
+  color: white;
 }
 
 .our-portfolio-text {
@@ -564,7 +567,7 @@ footer {
 
 .footer-soc-join {
   margin-left: 70px;
-  margin-top: 12px;
+  margin-top: -60px;
 }
 
 .footer-soc-join-title {
@@ -575,3 +578,39 @@ footer {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.footer-soc-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-soc-items {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.footer-soc-item:last-child {
+  margin-right: 0;
+}
+
+.footer-soc-items-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-soc-items-link:hover,
+.footer-soc-items-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-soc-items-icons {
+  fill: white;
+}
+
