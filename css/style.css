@@ -639,9 +639,9 @@ header {
   overflow: hidden;
 }
 
-.our-portfolio-thumb::before {
-  content: "";
-  display: inline-block;
+.our-portfolio-overlay {
+  /* content: ""; */
+  /* display: inline-block;  */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -673,9 +673,18 @@ header {
   color: white;
 }
 
-.our-portfolio-thumb:hover::before {
+.our-portfolio-thumb:hover .our-portfolio-overlay {
   transform: translateY(0); 
 }
+
+.our-portfolio-overlay {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+
 
 /* test */
 
