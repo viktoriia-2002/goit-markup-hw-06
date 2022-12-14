@@ -520,7 +520,7 @@ header {
 }
 
 .our-team-soc-icons {
-  fill: #AFB1B8;
+  fill: #afb1b8;
   /* fill: currentColor; */
   transition: fill 250ms var(--timing-function);
 }
@@ -541,6 +541,10 @@ header {
 }
 
 .loyal-customers-items {
+  margin-right: 30px;
+}
+
+.loyal-customers-link {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -549,40 +553,31 @@ header {
   align-items: center;
   justify-content: center;
   display: flex;
-  transition: outline 4250ms var(--timing-function),
-    border 4250ms var(--timing-function), color 4250ms var(--timing-function);
+  transition: border-color 250ms var(--timing-function);
 }
 
-
-.loyal-customers-items:hover {
+.loyal-customers-link:hover {
   outline: 1px solid var(--accent-color);
   border: 1px solid transparent;
-  /* transition: color 4250ms var(--timing-function); */
 }
 
-
-.loyal-customers-icons {
+.loyal-customers-link {
   fill: #afb1b8;
-  /* transition: outline 5250ms var(--timing-function),
-    border 5250ms var(--timing-function), color 5250ms var(--timing-function), transition 5250ms var(--timing-function); */
-} 
-/* 
-.loyal-customers-items:focus-visible {
-  outline: 1px solid var(--accent-color);
-  border: 1px solid transparent;
-} */
-
-.loyal-customers-items:hover .loyal-customers-icons,
-.loyal-customers-items:focus .loyal-customers-icons {
-  fill: var(--accent-color);
-  transition: 4250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function), outline 250ms var(--timing-function), 
+  ;
 }
 
-.loyal-customers-items:focus .loyal-customers-icons {
+.loyal-customers-link:hover .loyal-customers-icons,
+.loyal-customers-link:focus .loyal-customers-icons {
+  fill: var(--accent-color);
+  transition: 250ms var(--timing-function);
+}
+
+.loyal-customers-link:focus .loyal-customers-icons {
   fill: var(--accent-color);
 }
 
-.loyal-customers-items:last-child {
+.loyal-customers-link:last-child {
   margin-right: 0;
 }
 
