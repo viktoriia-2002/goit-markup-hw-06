@@ -549,7 +549,6 @@ header {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  margin-right: 30px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -563,8 +562,7 @@ header {
 
 .loyal-customers-link {
   fill: #afb1b8;
-  transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function), outline 250ms var(--timing-function), 
-  ;
+  transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function), outline 250ms var(--timing-function);
 }
 
 .loyal-customers-link:hover .loyal-customers-icons,
@@ -831,3 +829,4 @@ footer {
 .footer-soc-items-icons {
   fill: white;
 }
+/* sdfdsg */
