@@ -560,22 +560,22 @@ header {
   border: 1px solid transparent;
 }
 
-.loyal-customers-link {
+.loyal-customers-icons {
   fill: #afb1b8;
-  transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function), outline 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 
-.loyal-customers-link:hover .loyal-customers-icons,
-.loyal-customers-link:focus .loyal-customers-icons {
+.loyal-customers-items:hover .loyal-customers-icons,
+.loyal-customers-items:focus .loyal-customers-icons {
   fill: var(--accent-color);
   transition: 250ms var(--timing-function);
 }
 
-.loyal-customers-link:focus .loyal-customers-icons {
+.loyal-customers-items:focus .loyal-customers-icons {
   fill: var(--accent-color);
 }
 
-.loyal-customers-link:last-child {
+.loyal-customers-items:last-child {
   margin-right: 0;
 }
 
