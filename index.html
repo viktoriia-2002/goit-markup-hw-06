@@ -66,6 +66,72 @@
                 <use href="./img/icons-icomoon.svg#icon-close-black"> </use>
               </svg>
             </button>
+          
+            <form type="group" class="feedback-form" autocomplete="off">
+              <h2 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h2>
+              <div class="form-item">
+                <label for="user-name" class="form-label">Ім'я</label>
+                <div class="modal-input-wrapper">
+                  <input type="text" name="name" id="user-name" class="form-input" />
+                  <svg class="modal-icon" width=" 18px" height=" 18px">
+                    <use href="./img/icons-icomoon.svg#icon-person-black-icon"></use>
+                  </svg>
+                </div>
+              </div>
+        
+              <div class="form-item">
+                <label for="user-tel" class="form-label">Телефон</label>
+                <div class="modal-input-wrapper">
+                  <input type="text" name="name" id="user-name" class="form-input" />
+                  <svg class="modal-icon" width=" 18px" height=" 18px">
+                    <use href="./img/icons-icomoon.svg#icon-phone-black-icon"></use>
+                  </svg>
+                </div>
+              </div>
+        
+              <div class="form-item">
+                <label for="user-email" class="form-label">Пошта</label>
+                <div class="modal-input-wrapper">
+                  <input type="text" name="name" id="user-name" class="form-input" />
+                  <svg class="modal-icon" width=" 18px" height=" 18px">
+                    <use href="./img/icons-icomoon.svg#icon-email-black-icon"></use>
+                  </svg>
+                </div>
+              </div>
+        
+              <div class="form-item">
+                <label for="user-comment" class="form-label">Коментар</label>
+                <textarea
+                  name="comment"
+                  id="user-comment"
+                  cols="30"
+                  rows="10"
+                  class="modal-text"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </div>
+        
+              <div class="form-item-checkbox">
+                <input
+                  type="checkbox"
+                  name="policy"
+                  id="policy"
+                  checked
+                  class="modal-politic-check visually-hidden"
+                />
+                <label for="policy" class="policy-form-label">
+                  <span class="modal-politic-check2">
+                    <svg width="11" height="7">
+                      <use href="./img/icons-icomoon.svg#icon-checkbox-modal"></use>
+                    </svg>
+                  </span>
+                  Погоджуюся з розсилкою та приймаю
+                  <a href="" class="modal-link link">Умови договору</a>
+                </label>
+              </div>
+        
+              <button type="submit" class="modal-form-button">Відправити</button>
+            </form>
           </div>
         </div>
       </div>
@@ -130,14 +196,14 @@
             <img src="./img/what-are-we-doing-img-2.jpg"
               alt="веб-інтерфейс дизайнери розробляють додаток смартфони команда творціd працює інтерфейс мобільні телефони"
               width="370" height="294" />
-              <div class="our-business-items-label">
-                <p class="our-business-items-label-text">Мобільні додатки</p>
-              </div>
+            <div class="our-business-items-label">
+              <p class="our-business-items-label-text">Мобільні додатки</p>
+            </div>
           </li>
           <li class="our-business-items">
             <img src="./img/what-are-we-doing-img-3.jpg"
               alt="креативний художник-веб-дизайн з робочим колір графічним планшетом" width="370" height="294" />
-               <div class="our-business-items-label">
+            <div class="our-business-items-label">
               <p class="our-business-items-label-text">Дизайнерські рішення</p>
             </div>
           </li>
@@ -314,19 +380,20 @@
               <use href="./img/icons-icomoon.svg#icon-clients-icon-1"></use>
             </svg>
           </a>
-         </li>
-        <li class="loyal-customers-items">
-          <a href="" class="loyal-customers-link link">
-          <svg width="106" height="50" class="loyal-customers-icons">
-            <use href="./img/icons-icomoon.svg#icon-clients-icon-2"></use>
-          </svg></a>
         </li>
         <li class="loyal-customers-items">
           <a href="" class="loyal-customers-link link">
-          <svg width="106" height="50" class="loyal-customers-icons">
-            <use href="./img/icons-icomoon.svg#icon-clients-icon-3"></use>
-          </svg>
-        </a></li>
+            <svg width="106" height="50" class="loyal-customers-icons">
+              <use href="./img/icons-icomoon.svg#icon-clients-icon-2"></use>
+            </svg></a>
+        </li>
+        <li class="loyal-customers-items">
+          <a href="" class="loyal-customers-link link">
+            <svg width="106" height="50" class="loyal-customers-icons">
+              <use href="./img/icons-icomoon.svg#icon-clients-icon-3"></use>
+            </svg>
+          </a>
+        </li>
         <li class="loyal-customers-items">
           <a href="" class="loyal-customers-link link">
             <svg width="106" height="50" class="loyal-customers-icons">
@@ -404,6 +471,21 @@
           </li>
         </ul>
       </div>
+      <div class="signup-footer">
+        <h2 class="signup-form-footer-title">Підпишіться на розсилку</h2>
+        <form class="footer-form">
+            <div role="form-field" class="form-field">
+                <input type="mail" name="signup-form" id="user-email" placeholder="E-mail" class="signup-input">
+                <button type="submit" class="signup-footer-button btn">
+                    <svg class="signup-footer-icon" width=" 24px" height=" 24px">
+                        <use href="./img/icons-icomoon.svg#icon-icon-send"></use>
+                    </svg>
+                    Підписатися</button>
+            </div>
+        </form>
+    </div>
+
+
     </div>
   </footer>
 
@@ -411,12 +493,3 @@
 </body>
 
 </html>
-
-<!-- <svg>
-  <use href="./путь-к-свг-спрайту/имя-спрайта.svg#ідентифікатор-символа"></use>
-</svg> -->
-
-<!-- 
-<svg  width="20" height="20" class="our-team-soc-icons">
-  <use class="" href="./img/icons.svg#icon-instagram"></use>
-</svg> -->

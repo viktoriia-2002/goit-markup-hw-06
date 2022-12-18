@@ -3,6 +3,7 @@
   --secondary-color: #757575;
   --accent-color: #2196f3;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --input-color: #2f303a;
 }
 
 *,
@@ -266,6 +267,7 @@ header {
   padding: 10px 24px;
   color: #ffffff;
   background: var(--accent-color);
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   display: block;
   margin: 0 auto;
@@ -326,7 +328,11 @@ header {
   height: 30px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  /* transition: transform 5250ms var(--timing-function); */
+  transition: fill 250ms var(--timing-function);
+}
+
+.modal-button:hover {
+  fill: var(--accent-color);
 }
 
 /* ------------MODAL WINDOW --------------*/
@@ -581,6 +587,7 @@ header {
 
 /* ------------Portfolio-second-page--------------*/
 
+/* ------------Portfolio-second-page--------------*/
 .our-portfolio-options-list {
   display: flex;
   justify-content: center;
@@ -829,4 +836,275 @@ footer {
 .footer-soc-items-icons {
   fill: white;
 }
-/* sdfdsg */
+/* FOOTER FORM*/
+
+
+.footer-form {
+  padding: 0;
+}
+
+.signup-footer {
+  margin-left: 119px;
+  margin-top: -46px;
+  position: relative;
+}
+
+.signup-form-footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.signup-input {
+  margin: 0;
+  width: 358px;
+  height: 50px;
+  padding: 15px 0px 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--input-color);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  transition: border 250ms var(--timing-function);
+}
+
+.signup-input:focus,
+.signup-input:hover {
+  border-color: var(--accent-color);
+  outline: transparent;
+}
+
+.form-field > input::placeholder {
+  background-color: var(--input-color);
+}
+
+.signup-footer-button {
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  border-radius: 4px;
+  border: none;
+  overflow: hidden;
+  padding: 10px 62px 10px 28px;
+  margin-left: 12px;
+  background: var(--accent-color);
+  color: #ffffff;
+  transition: background-color 250ms var(--timing-function);
+}
+
+.signup-footer-button:hover,
+.signup-footer-button:focus {
+  background-color: #188ce8;
+}
+
+.signup-footer-icon {
+  fill: white;
+}
+
+.signup-footer-icon {
+  position: absolute;
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}
+
+/* MODAL WINDOW TEST */
+
+.feedback-form {
+  width: 528px;
+}
+
+.modal-form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+form {
+  width: 528px;
+  padding: 40px;
+}
+
+.form-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.form-item label {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-size: 12px;
+  transition: border-color 250ms var(--timing-function);
+}
+
+.modal-input-wrapper {
+  position: relative;
+}
+
+.modal-icon {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill 250ms var(--timing-function);
+}
+
+.form-input:focus,
+.form-input:hover {
+  border-color: var(--accent-color);
+  outline: transparent;
+}
+
+.form-input:focus + .modal-icon {
+  fill: var(--accent-color);
+}
+
+.form-input:hover + .modal-icon {
+  fill: var(--accent-color);
+}
+
+.modal-text {
+  width: 100%;
+  height: 120px;
+  padding: 14px;
+  font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 12px 16px;
+  resize: none;
+}
+
+.modal-form-button {
+  display: flex;
+  margin: auto;
+  min-width: 200px;
+  border-radius: 4px;
+  border: none;
+  overflow: hidden;
+  padding: 10px 52px;
+  margin-left: 12px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  transition: background-color 250ms var(--timing-function);
+}
+
+.modal-form-button:hover,
+.modal-form-button:focus {
+  background-color: #188ce8;
+}
+
+.form-item-checkbox {
+  position: relative;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  transition: transform 250ms var(--timing-function),
+    outline 250ms var(--timing-function), border 250ms var(--timing-function);
+}
+
+.modal-text:focus,
+.modal-text:hover {
+  border-color: var(--accent-color);
+  outline: transparent;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-size: 12px;
+  transition: transform 250ms var(--timing-function),
+    outline 250ms var(--timing-function), border 250ms var(--timing-function);
+}
+
+.policy-form-label{
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 30px;
+}
+
+
+.modal-politic-check2 {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.modal-politic-check2 svg{
+  fill: transparent;
+} 
+
+.modal-politic-check:checked + label > span {
+  border: none;
+  background-color: var(--accent-color);
+}
+
+.modal-politic-check:checked + label > span svg {
+fill: white;
+} 
+
+.modal-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 3px;
+}
+
+.modal-link:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+
+
