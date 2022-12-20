@@ -58,13 +58,13 @@ body {
   padding: 0;
   margin: 0;
 }
-
+/* 
 button {
   text-align: center;
-}
+} */
 
 .btn {
-  display: inline-block;
+  /* display: flex; */
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -321,6 +321,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   top: 8px;
   right: 8px;
   border-radius: 50%;
@@ -838,7 +839,6 @@ footer {
 }
 /* FOOTER FORM*/
 
-
 .footer-form {
   padding: 0;
 }
@@ -923,6 +923,7 @@ footer {
 }
 
 .modal-form-title {
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -1004,9 +1005,8 @@ form {
 }
 
 .modal-form-button {
-  display: flex;
-  margin: auto;
   min-width: 200px;
+  height: 50px;
   border-radius: 4px;
   border: none;
   overflow: hidden;
@@ -1015,6 +1015,8 @@ form {
   background-color: var(--accent-color);
   color: #ffffff;
   transition: background-color 250ms var(--timing-function);
+  display: block;
+  margin: 0 auto;
 }
 
 .modal-form-button:hover,
@@ -1049,9 +1051,10 @@ form {
     outline 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
-.policy-form-label{
+.policy-form-label {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7px;
@@ -1059,7 +1062,6 @@ form {
   color: #757575;
   margin-bottom: 30px;
 }
-
 
 .modal-politic-check2 {
   display: flex;
@@ -1074,14 +1076,13 @@ form {
   cursor: pointer;
 }
 
-
 .visually-hidden {
   visibility: hidden;
 }
 
-.modal-politic-check2 svg{
+.modal-politic-check2 svg {
   fill: transparent;
-} 
+}
 
 .modal-politic-check:checked + label > span {
   border: none;
@@ -1089,22 +1090,19 @@ form {
 }
 
 .modal-politic-check:checked + label > span svg {
-fill: white;
-} 
+  fill: white;
+}
 
 .modal-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--accent-color);
   margin-left: 3px;
 }
 
-.modal-link:hover {
+.modal-link u {
   text-decoration: underline;
   color: var(--accent-color);
 }
-
-
-
